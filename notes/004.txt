@@ -1,0 +1,121 @@
+
+
+---
+
+## Detailed Notes on "Building Your Own Custom React"
+
+### Introduction (00:00 - 00:32)
+- The video introduces a special series called **"Chai and React"**, aimed at deeply understanding React through practical projects.
+- Today’s video is about creating a simplified, customized version of React to enhance conceptual clarity and confidence.
+
+### Objective of Creating a Custom React (00:32 - 01:03)
+- This custom React won't be as powerful as the original, but will help demystify React by demonstrating that it's not magical or impossible to build.
+- The goal is confidence-building through hands-on experience.
+- Encourages viewer interaction (1000 comments, 100 shares), emphasizing the unique, detailed nature of this content.
+
+---
+
+## Understanding React and its Basic Setup (01:03 - 01:34)
+- Traditionally, React projects are initiated using tools like `create-react-app` and `Vite`.
+- React has different versions for different environments (e.g., browsers use ReactDOM, mobile uses React Native).
+
+---
+
+## Exploring Original React Code (01:34 - 02:05)
+- The session includes a quick look at the actual React library on GitHub, offering an overview to understand its structure and source code flow.
+
+---
+
+## Building Our Custom React - Basic Setup (02:05 - 03:48)
+- Created a new folder named `custom-react`.
+- Basic structure includes:
+  - **index.html**: Contains a basic boilerplate HTML with a root `<div>` where React elements render.
+  - **customReact.js**: A JavaScript file to hold our custom React logic.
+
+---
+
+## Understanding React Rendering Mechanism (03:48 - 04:54)
+- Typically, React selects a root container (`document.querySelector("#root")`) and renders components into it.
+- Demonstrated a similar simple DOM selection (`document.querySelector("#root")`) and storage in a variable (`mainContainer`).
+
+---
+
+## Creating React Elements Manually (04:54 - 08:33)
+- Explains how React internally represents elements as objects with keys:
+  - **type**: HTML tag (e.g., `div`, `p`, `a`)
+  - **props**: Attributes like `href`, `target`
+  - **children**: Inner text or nested elements.
+- Demonstrates manually creating such an object:
+```javascript
+const reactElement = {
+  type: "a",
+  props: {
+    href: "https://google.com",
+    target: "_blank"
+  },
+  children: "Click me to visit Google"
+};
+```
+
+---
+
+## Rendering Elements to DOM (08:33 - 13:39)
+- Introduces a custom rendering function `customRender` to inject React elements into the DOM.
+- Breakdown of the rendering process:
+  1. Create a DOM element using `document.createElement` based on `type`.
+  2. Inject inner content (`innerHTML` or `innerText`) from `children`.
+  3. Set attributes from `props` using `setAttribute`.
+  4. Append created element to the main container using `appendChild`.
+
+---
+
+## Debugging & Improving the Custom Render (13:39 - 18:41)
+- Resolves minor debugging issues (e.g., correcting `innerHTML` typo).
+- Improves the renderer by using loops to dynamically set attributes, making the code more modular and efficient.
+
+---
+
+## Comparing Custom React with Actual React (18:41 - 22:35)
+- Explains that React uses a bundler (like Babel, Vite) to convert JSX (HTML-like syntax in JS) into JavaScript objects similar to those manually created.
+- Demonstrates creating a functional React component (`MeApp`) and shows how JSX internally gets transpiled into JS objects.
+
+---
+
+## React.createElement Method (22:35 - 33:24)
+- Demonstrates React’s internal method `React.createElement`, which creates elements in a structured manner:
+```javascript
+React.createElement("a", { href: "https://google.com", target: "_blank" }, "Click me")
+```
+- Highlights the difference between directly passing object literals vs. using React’s method, emphasizing structured expectations for props and children.
+
+---
+
+## Injecting JavaScript Variables into JSX (33:24 - 38:31)
+- Introduces curly braces `{}` syntax in JSX to inject evaluated JavaScript expressions (variables).
+- Clarifies the concept of evaluated expressions vs. raw JS statements:
+  - Allowed: `{userName}`
+  - Not allowed: Conditional statements (`if-else`), loops (`for`), as JSX expects final evaluated values.
+
+---
+
+## Summary of the Custom React Journey (38:31 - 41:16)
+- Recaps the entire custom React creation journey:
+  - DOM selection & basic rendering.
+  - Creating and injecting elements manually.
+  - Utilizing loops for efficiency.
+  - Understanding JSX transpilation and variable injection.
+
+---
+
+## Deep Dive into React’s Actual Source Code (41:16 - 44:06)
+- Encourages exploring React's open-source GitHub repository.
+- Points viewers towards specific folders (`scripts` and `src`) to understand Babel transformations, optimizations, and how React actually creates elements.
+- Demonstrates the exact location (`ReactElement.js`) explaining React’s internal object structure (type, props, keys, refs).
+
+---
+
+## Conclusion & Call to Action (44:06 - 45:36)
+- Reinforces viewer engagement by urging comments and shares due to the depth of the content.
+- Highlights this unique, practical approach of teaching React by building from scratch, examining source code directly, and going beyond standard documentation.
+- Encourages continued learning through more practical projects to solidify React knowledge.
+

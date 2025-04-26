@@ -1,0 +1,62 @@
+
+
+## Creating a React Project
+
+- We'll jump straight into coding and learn the file structure for a React project [(00:00:21)](https://www.youtube.com/watch?v=k3KqQvywToE&t=21s).
+
+- A code editor and browser are required for web development, and Node.js can be used to run JavaScript [(00:01:46)](https://www.youtube.com/watch?v=k3KqQvywToE&t=106s).
+
+- You need React documentation and to create a folder; a repository can be created to share code files [(00:03:16)](https://www.youtube.com/watch?v=k3KqQvywToE&t=196s).
+
+- A new repository is created and named **"Simply Chai and React"** [(00:04:03)](https://www.youtube.com/watch?v=k3KqQvywToE&t=243s).
+
+- A file is created inside GitHub, and Git is initialized [(00:06:19)](https://www.youtube.com/watch?v=k3KqQvywToE&t=379s).
+
+- The importance of React documentation is discussed, and it's suggested to go to the **Quick Start** section [(00:08:16)](https://www.youtube.com/watch?v=k3KqQvywToE&t=496s).
+
+- React is introduced as a library, and its attachments like React DOM and React Native are mentioned, along with concepts on how to build applications [(00:09:50)](https://www.youtube.com/watch?v=k3KqQvywToE&t=590s).
+
+- Tools like Vite, Parcel, and bundlers can be used with React to combine scripts and generate a basic file [(00:09:22)](https://www.youtube.com/watch?v=k3KqQvywToE&t=562s).
+
+- To create a React project, you can use Node Package Manager (NPM) and the **Create React App** utility [(00:11:58)](https://www.youtube.com/watch?v=k3KqQvywToE&t=718s).
+
+- **Create React App** provides a lot of setup out of the box, but it may include unnecessary extras [(00:13:17)](https://www.youtube.com/watch?v=k3KqQvywToE&t=797s).
+
+## Running the Project and Understanding the Structure
+- To run the project, you need to start the script and move into the project folder using `cd` in the terminal [(00:16:59)](https://www.youtube.com/watch?v=k3KqQvywToE&t=1019s).
+
+- Inside the project, there’s a `package.json` file containing project name, version, and dependency information [(00:14:36)](https://www.youtube.com/watch?v=k3KqQvywToE&t=876s).
+
+- Explained how to run the React project using the `npm run start` command [(00:17:30)](https://www.youtube.com/watch?v=k3KqQvywToE&t=1050s).
+
+- After starting, you’ll see the React logo on **localhost:3000** and the project will be live [(00:17:50)](https://www.youtube.com/watch?v=k3KqQvywToE&t=1070s).
+
+- The `npm run build` command is used to build the project, generating static assets inside the build folder [(00:19:06)](https://www.youtube.com/watch?v=k3KqQvywToE&t=1146s).
+
+
+## Naming and Structuring the Project
+
+- Choosing a project name is important; then the setup can be shifted to Vite for easier understanding [(00:21:29)](https://www.youtube.com/watch?v=k3KqQvywToE&t=1289s).
+
+- Different frameworks can be used for project creation: Vanilla JavaScript, Vue, React, and others [(00:21:36)](https://www.youtube.com/watch?v=k3KqQvywToE&t=1296s).
+
+## Project Files and Dependencies
+
+- After creating the project, check the `package.json` file for installed libraries and scripts [(00:22:34)](https://www.youtube.com/watch?v=k3KqQvywToE&t=1354s).
+
+- A template is needed for the React project; review packages and files for setup [(00:25:39)](https://www.youtube.com/watch?v=k3KqQvywToE&t=1539s).
+
+- Some files like testing files and unnecessary assets can be deleted to clean up the project [(00:26:00)](https://www.youtube.com/watch?v=k3KqQvywToE&t=1560s).
+
+## Cleaning and Editing the Project
+
+- Edit `App.js` and `App.css` to clean the project by removing unnecessary code [(00:27:04)](https://www.youtube.com/watch?v=k3KqQvywToE&t=1624s).
+
+- Use `npm run start` to run the project again and check it in the web browser [(00:29:22)](https://www.youtube.com/watch?v=k3KqQvywToE&t=1762s).
+
+- Start cleaning by deleting folders like `assets` and other unnecessary files [(00:30:40)](https://www.youtube.com/watch?v=k3KqQvywToE&t=1840s).
+
+- In `App.js`, unnecessary code is removed, and a basic function is created returning an `h1` tag [(00:32:07)](https://www.youtube.com/watch?v=k3KqQvywToE&t=1927s).
+
+- The script is run through the terminal, and the project is run using Vite [(00:32:45)](https://www.youtube.com/watch?v=k3KqQvywToE&t=1965s).
+
